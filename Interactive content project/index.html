@@ -1,0 +1,54 @@
+<html>
+    <head>
+
+        <title>Rock - Paper - Scissors | Online game built with Javascript and jQuery</title>
+        <meta name="description" content="Classic game of Rock - Paper - Scissors built with pure Javascript and jQuery. Collect 3 points and don't let the computer win!">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <section id="main-container">
+
+            <h1> Rock - Paper - Scissors </h1>
+
+            <div class="options">
+                    <img id="rock" class="selected" src='img/rock.svg'>
+                        <img id="paper" src='img/paper.svg'>
+                        <td><img id="scissors" src='img/scissors.svg'>
+            </div>
+
+            <div class="button" id="start">CHOOSE</div>
+            <div class="button" id="tryAgain">PLAY AGAIN</div>
+
+            <div class="title">Yours choice:</div>
+            <div class="choice" id="userChoice"> <img src="img/question.svg"> </div>
+
+            <div class="title">Computer's choice:</div>
+            <div class="choice" id="computerChoice"> <img src="img/question.svg"> </div>
+
+
+            <div class="title">Result:</div>
+
+            <div class="winner" id="result"> <img src="img/question.svg"></div>
+            <div class="winner" id="pointsFor"> </div>
+
+            <div class="right-container">
+                    <div class="player">Computer:</div>
+                    <div id="computerPoints">0</div>
+            </div>
+
+            <div class="left-container">
+                <div class="player">You:</div>
+                <div id="userPoints">0</div>
+            </div>
+
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
